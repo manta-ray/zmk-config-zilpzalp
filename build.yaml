@@ -4,4 +4,3 @@ include:
     shield: zilpzalp
   - board: seeeduino_xiao_ble
     shield: zilpzalp_ble
-    snippet: studio-rpc-usb-uart
