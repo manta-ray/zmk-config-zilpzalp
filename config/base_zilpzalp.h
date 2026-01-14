@@ -6,6 +6,7 @@
 #define NAV 2
 #define SYM 3
 #define FUN 4
+#define GAM 5
 
 // &lt {
 //     quick_tap_ms = <170>;
@@ -36,6 +37,15 @@ combo_##NAME { \
     timeout-ms = <20>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
+    layers = <0 1 2 3 4>; \
+};
+
+#define COMBG(NAME, BINDINGS, KEYPOS) \
+combo_##NAME { \
+    timeout-ms = <20>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <5>; \
 };
 
 / {
@@ -71,6 +81,26 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 5 6)
         COMBO(del, &kp DEL, 6 7)
         COMBO(delword, &kp LC(BSPC), 5 7)
+/* Game Layer Combos */
+	COMBO(TOG, &to 5, 24 25 26 27)
+	COMBG(TO0, &to 0, 24 25 26 27)
+	COMBG(qg, &kp Q, 2 3)
+	COMBG(t, &kp T, 3 12)
+	COMBG(g, &kp G, 11 12)
+	COMBG(c, &kp C, 18 19)
+	COMBG(b, &kp B, 18 20)
+	COMBG(alt, &kp LALT, 24 25)
+	COMBG(h, &kp H, 4 13)
+	COMBG(f7, &kp F7, 5 6)
+	COMBG(f8, &kp F8, 6 7)
+	COMBG(f9, &kp F9, 5 7)
+	COMBG(f4, &kp F4, 14 15)
+	COMBG(f5, &kp F5, 15 16)
+	COMBG(f6, &kp F6, 16 17)
+	COMBG(f7, &kp F7, 15 17)
+	COMBG(f1, &kp F1, 21 22)
+	COMBG(f2, &kp F2, 22 23)
+	COMBG(f3, &kp F3, 21 23)
 /* alternative shifting */
 /*
         COMBO(Sq, &kp LS(Q), 1 2 25)
