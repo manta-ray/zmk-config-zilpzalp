@@ -47,7 +47,7 @@ combo_##NAME { \
         COMBO(v, &kp V, 0 1)
         COMBO(_ae, &kp RA(Q), 15 26)
         COMBO(_oe, &kp RA(P), 17 26)
-        COMBO(_ue, &kp RA(U), 6 26)
+        COMBO(_ue, &kp RA(Y), 6 26)
         COMBO(_sz, &kp RA(S), 9 25)
         COMBO(sch, &macro_sch, 0 2)
         COMBO(slash, &kp SLASH, 22 23)
