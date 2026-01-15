@@ -96,11 +96,13 @@ combo_##NAME { \
 	COMBG(f9, &kp F9, 5 7)
 	COMBG(f4, &kp F4, 14 15)
 	COMBG(f5, &kp F5, 15 16)
-	COMBG(f6, &kp F6, 16 17)
-	COMBG(f7, &kp F7, 15 17)
+	COMBG(f6, &kp F6, 14 16)
 	COMBG(f1, &kp F1, 21 22)
 	COMBG(f2, &kp F2, 22 23)
 	COMBG(f3, &kp F3, 21 23)
+	COMBG(escg, &kp ESC, 0 8)
+	COMBG(bspcg, &kp BSPC, 16 17)
+	COMBG(dashg, &kp MINUS, 26 27)
 /* alternative shifting */
 /*
         COMBO(Sq, &kp LS(Q), 1 2 25)
