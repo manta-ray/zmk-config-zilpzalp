@@ -59,7 +59,7 @@
                                                              &kp TILDE        &trans         &trans         &trans
             >;
         };
-// #ifdef ZILPZALP_BLE_FLAG
+#ifdef ZILPZALP_BLE_FLAG
         function {
             label = "FUN";
 
@@ -69,19 +69,19 @@
                                &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
                                                              &out OUT_TOG   &trans         &trans         &trans
             >;
-// #endif
-// #ifndef ZILPZALP_BLE_FLAG
-//         function {
-//             label = "FUN";
-// 
-//             bindings = <
-//                                &bootloader    &trans         &trans         &trans         &kp F12        &kp F7         &kp F8         &kp F9
-//                 &bootloader    &kp F12        &kp F11        &kp F10        &trans         &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
-//                                &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
-//                                                              &trans         &trans         &trans         &trans
-//             >;
-// #endif
-//         };
+#endif
+#ifndef ZILPZALP_BLE_FLAG
+        function {
+            label = "FUN";
+
+            bindings = <
+                               &bootloader    &trans         &trans         &trans         &kp F12        &kp F7         &kp F8         &kp F9
+                &bootloader    &kp F12        &kp F11        &kp F10        &trans         &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
+                               &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
+                                                             &trans         &trans         &trans         &trans
+            >;
+#endif
+        };
 
     };
     	game {
