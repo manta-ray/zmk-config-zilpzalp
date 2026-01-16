@@ -63,7 +63,7 @@
             bindings = <
                                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_CLR_ALL &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
                 &bootloader    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bt BT_NXT     &kp F11        &kp F4         &kp F5         &kp F6         &kp F10
-                               &to GAM        &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
+                               &kp F9         &kp F8         &kp F7                                       &kp F1         &kp F2         &kp F3
                                                              &out OUT_TOG   &trans         &trans         &trans
             >;
        };
@@ -72,7 +72,7 @@
 
 	   bindings = <
 				&kp TAB       &kp W	     &kp E          &kp R          &kp M          &kp N8          &kp N8        &kp N9
-		&kp LCTRL       &kp A         &kp S          &kp D          &kp F          &kp I          &kp N4          &kp N5        &kp N6        &to APT
+		&kp LCTRL       &kp A         &kp S          &kp D          &kp F          &kp I          &kp N4          &kp N5        &kp N6        &kp P
 		                &kp Z         &kp X          &kp V                                        &kp N1          &kp N2        &kp N3
 				                             &kp LSHFT      &kp SPC        &kp N0         &kp EQUAL
 	   >;

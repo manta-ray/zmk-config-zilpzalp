@@ -82,7 +82,7 @@ combo_##NAME { \
         COMBO(delword, &kp LC(BSPC), 5 7)
 /* Game Layer Combos */
 	COMBO(TOG, &to GAM, 15 22)
-	COMBG(TO0, &to APT, 16 23)
+	COMBG(TO0, &to APT, 15 22)
 	COMBG(qg, &kp Q, 2 3)
 	COMBG(t, &kp T, 3 12)
 	COMBG(g, &kp G, 11 12)
