@@ -19,7 +19,6 @@
 / {
     macros {
         macro_sch: macro_sch {
-            label = "Macro_sch";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <
@@ -133,7 +132,7 @@ combo_##NAME { \
         COMBO(Scomma, &kp SEMI, 22 26)
         COMBO(Sdot, &kp COLON, 23 26)
         COMBO(Se, &kp LS(E), 14 15 26)
-//*/
+*/
     };
 };
 
@@ -150,7 +149,6 @@ combo_##NAME { \
     behaviors {
         hl: homerow_mods_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods left";
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
@@ -163,7 +161,6 @@ combo_##NAME { \
         };
         hr: homerow_mods_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "homerow mods right";
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
@@ -177,7 +174,6 @@ combo_##NAME { \
 
         my_lt: my_layer_taps {
             compatible = "zmk,behavior-hold-tap";
-            label = "my layer taps";
             #binding-cells = <2>;
             // flavor = "tap-preferred";
             flavor = "balanced";
@@ -191,14 +187,12 @@ combo_##NAME { \
 
         dotcol: dot_colon {
             compatible = "zmk,behavior-mod-morph";
-            label = "DOT_COL";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COLON>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         comsem: comma_semicolon {
             compatible = "zmk,behavior-mod-morph";
-            label = "COM_SEM";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
