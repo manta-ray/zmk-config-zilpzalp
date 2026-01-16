@@ -18,7 +18,7 @@
         compatible = "zmk,keymap";
 
         aptmak {
-            display-name = "APT";
+            label = "APT";
 
             bindings = <
                                &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
@@ -28,7 +28,7 @@
             >;
         };
         numbers {
-            display-name = "NUM";
+            label = "NUM";
 
             bindings = <
                                   &none             &none                &none              &none          &none          &kp N7         &kp N8         &kp N9
@@ -38,7 +38,7 @@
             >;
         };
         navigation {
-            display-name = "NAV";
+            label = "NAV";
 
             bindings = <
                                &none          &none          &none           &kp C_VOL_UP   &kp LC(X)      &kp LC(INSERT) &kp LS(INSERT) &kp INSERT
@@ -48,7 +48,7 @@
             >;
         };
         symbols {
-            display-name = "SYM";
+            label = "SYM";
 
             bindings = <
                                &none          &none          &none            &none          &none          &none          &none          &none
@@ -58,7 +58,7 @@
             >;
         };
         function {
-            display-name = "FUN";
+            label = "FUN";
 
             bindings = <
                                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_CLR_ALL &bt BT_PRV     &kp F12        &kp F7         &kp F8         &kp F9
@@ -68,7 +68,7 @@
             >;
        };
     	game {
-	   display-name = "GAM";
+	   label = "GAM";
 
 	   bindings = <
 				&kp TAB       &kp W	     &kp E          &kp R          &kp M          &kp N8          &kp N8        &kp N9
