@@ -1,4 +1,6 @@
 ---
 include:
+  - board: xiao_rp2040
+    shield: zilpzalp
   - board: xiao_ble
     shield: zilpzalp_ble
