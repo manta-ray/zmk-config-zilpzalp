@@ -1,0 +1,37 @@
+#include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
+
+#include "base_zilpzalp.dtsi"
+
+
+// zilpzalp key numbers
+//     __________________________  __________________________
+//    /     0  |  1  |  2  |  3  \/   4 |   5 |   6 |   7    \
+// |  8  |  9  | 10  | 11  | 12  /\  13 |  14 |  15 |  16 | 17  |
+//    \    18  | 19  | 20    /        \    21 |  22 |  23   /
+//          \    24  | 25  /            \  26 |  27    /
+//           --------------              --------------
+
+/ {
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        aptmak {
+            label = "APT";
+
+            bindings = <
+                               &kp W          &kp F          &kp P          &kp B          &kp J          &kp L          &kp U          &kp Y
+                &hl LCTRL R    &hl LALT S     &hl LGUI T     &hl LSHFT H    &hl RALT K     &hr RALT X     &hr RSHFT N    &hr RGUI A     &hr LALT I     &hr RCTRL O
+                               &kp C          &kp G          &kp D                                        &kp M          &comsem        &dotcol
+                                                             &kp SPACE      &kp SPACE      &kp SPACE      &kp SPACE
+            >;
+        };
+};
+
+//     __________________________  __________________________
+//    /     1  |  2  |  3  |  4  \/   5 |   6 |   7 |   8    \
+// | 10  | 11  | 12  | 13  | 14  ||  15 |  16 |  17 |  18 | 19  |
+//    \    20  | 21  | 22  |     ||     |  23 |  24 |  25   /
+//                \    26  | 27  /\  28 |  29    /
+//                 --------------  --------------
