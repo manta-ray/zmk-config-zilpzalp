@@ -2,10 +2,11 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define APT 0
-#define NUM 1
+#define GAM 1
 #define NAV 2
 #define SYM 3
 #define FUN 4
+#define NUM 5
 
 // &lt {
 //     quick_tap_ms = <170>;
@@ -36,6 +37,15 @@ combo_##NAME { \
     timeout-ms = <20>; \
     bindings = <BINDINGS>; \
     key-positions = <KEYPOS>; \
+    layers = <0 2 3 4 5>; \
+};
+
+#define COMBG(NAME, BINDINGS, KEYPOS) \
+combo_##NAME { \
+    timeout-ms = <20>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <1>; \
 };
 
 / {
@@ -45,9 +55,9 @@ combo_##NAME { \
         COMBO(q, &kp Q, 1 2)
         COMBO(z, &kp Z, 18 19)
         COMBO(v, &kp V, 0 1)
-        COMBO(_ae, &kp RA(A), 15 26)
-        COMBO(_oe, &kp RA(O), 17 26)
-        COMBO(_ue, &kp RA(U), 6 26)
+        COMBO(_ae, &kp RA(Q), 15 26)
+        COMBO(_oe, &kp RA(P), 17 26)
+        COMBO(_ue, &kp RA(Y), 6 26)
         COMBO(_sz, &kp RA(S), 9 25)
         COMBO(sch, &macro_sch, 0 2)
         COMBO(slash, &kp SLASH, 22 23)
@@ -71,7 +81,30 @@ combo_##NAME { \
         COMBO(bspc, &kp BSPC, 5 6)
         COMBO(del, &kp DEL, 6 7)
         COMBO(delword, &kp LC(BSPC), 5 7)
+/* Game Layer Combos */
+	COMBO(TOG, &to GAM, 15 22)
+	COMBG(TO0, &to APT, 16 23)
+	COMBG(qg, &kp Q, 2 3)
+	COMBG(t, &kp T, 3 12)
+	COMBG(g, &kp G, 11 12)
+	COMBG(c, &kp C, 18 19)
+	COMBG(b, &kp B, 18 20)
+	COMBG(alt, &kp LALT, 24 25)
+	COMBG(h, &kp H, 4 13)
+	COMBG(f7, &kp F7, 5 6)
+	COMBG(f8, &kp F8, 6 7)
+	COMBG(f9, &kp F9, 5 7)
+	COMBG(f4, &kp F4, 14 15)
+	COMBG(f5, &kp F5, 15 16)
+	COMBG(f6, &kp F6, 14 16)
+	COMBG(f1, &kp F1, 21 22)
+	COMBG(f2, &kp F2, 22 23)
+	COMBG(f3, &kp F3, 21 23)
+	COMBG(escg, &kp ESC, 0 8)
+	COMBG(bspcg, &kp BSPC, 16 17)
+	COMBG(dashg, &kp MINUS, 26 27)
 /* alternative shifting */
+/*
         COMBO(Sq, &kp LS(Q), 1 2 25)
         COMBO(Sz, &kp LS(Z), 18 19 25)
         COMBO(Sv, &kp LS(V), 0 1 25)
@@ -100,6 +133,7 @@ combo_##NAME { \
         COMBO(Scomma, &kp SEMI, 22 26)
         COMBO(Sdot, &kp COLON, 23 26)
         COMBO(Se, &kp LS(E), 14 15 26)
+//*/
     };
 };
 
