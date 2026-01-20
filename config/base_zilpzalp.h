@@ -3,10 +3,10 @@
 
 #define APT 0
 #define GAM 1
-#define NAV 2
-#define SYM 3
-#define FUN 4
-#define NUM 5
+#define NUM 2
+#define NAV 3
+#define SYM 4
+#define FUN 6
 
 // &lt {
 //     quick_tap_ms = <170>;
