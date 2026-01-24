@@ -103,37 +103,9 @@ combo_##NAME { \
 	COMBG(escg, &kp ESC, 0 8)
 	COMBG(bspcg, &kp BSPC, 16 17)
 	COMBG(dashg, &kp MINUS, 26 27)
-/* alternative shifting */
-/*
-        COMBO(Sq, &kp LS(Q), 1 2 25)
-        COMBO(Sz, &kp LS(Z), 18 19 25)
-        COMBO(Sv, &kp LS(V), 0 1 25)
-        COMBO(Sw, &kp LS(W), 0 25)
-        COMBO(Sf, &kp LS(F), 1 25)
-        COMBO(Sp, &kp LS(P), 2 25)
-        COMBO(Sb, &kp LS(B), 3 25)
-        COMBO(Sj, &kp LS(J), 4 26)
-        COMBO(Sl, &kp LS(L), 5 26)
-        COMBO(Su, &kp LS(U), 6 26)
-        COMBO(Sy, &kp LS(Y), 7 26)
-        COMBO(Sr, &kp LS(R), 8 25)
-        COMBO(Ss, &kp LS(S), 9 25)
-        COMBO(St, &kp LS(T), 10 25)
-        COMBO(Sh, &kp LS(H), 11 25)
-        COMBO(Sk, &kp LS(K), 12 25)
-        COMBO(Sx, &kp LS(X), 13 26)
-        COMBO(Sn, &kp LS(N), 14 26)
-        COMBO(Sa, &kp LS(A), 15 26)
-        COMBO(Si, &kp LS(I), 16 26)
-        COMBO(So, &kp LS(O), 17 26)
-        COMBO(Sc, &kp LS(C), 18 25)
-        COMBO(Sg, &kp LS(G), 19 25)
-        COMBO(Sd, &kp LS(D), 20 25)
-        COMBO(Sm, &kp LS(M), 21 26)
-        COMBO(Scomma, &kp SEMI, 22 26)
-        COMBO(Sdot, &kp COLON, 23 26)
-        COMBO(Se, &kp LS(E), 14 15 26)
-//*/
+/* TODO: Combos for important Symbols and one-shot-shift */
+	COMBO(sshift, &sk LSHIFT, 16 17)
+
     };
 };
 
